@@ -38,7 +38,7 @@ pip install flask flask-sqlalchemy pymysql
 Get into EC2 instance via ssh and then follow these steps:
 
 1. Pre-requisites
-2. Gunicorn Setup(WSGI http server)
+2. Gunicorn Setup (WSGI http server)
 3. Configure Nginx as reverse proxy
 4. Run Website
 
