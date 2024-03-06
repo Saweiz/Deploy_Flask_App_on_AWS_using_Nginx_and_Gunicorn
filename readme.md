@@ -1,6 +1,6 @@
 # Deploying Flask App on EC2 machine using Gunicorn and Nginx
 
-### App description
+#### App description
 
 This is `Flask` based Blog app with `MySQL` (ORM) at backend. It has four sections:
 
@@ -17,7 +17,7 @@ This is `Flask` based Blog app with `MySQL` (ORM) at backend. It has four sectio
    Admin (website owner) has to login via credentials. And then he can create, delete, and update posts. 
 
 
-### Quick Start (Running the app locally)
+#### Quick Start (Running the app locally)
 
 Clone the repo and enter the project directory
 ```bash
@@ -46,7 +46,7 @@ Get into EC2 instance via ssh and then follow these steps:
 4. Run Website
 
 
-## 1. Pre-requisites
+### 1. Pre-requisites
 Update and install python venv.
 ```bash
 sudo apt update
@@ -72,7 +72,7 @@ pip install flask flask-sqlalchemy pymysql gunicorn
 
 ```
 
-## 2. Gunicorn Setup
+### 2. Gunicorn Setup
 
 In the Project Directory, test whether gunicorn works correctly. And run this command with virtual environment activated, after this step you can deactivate it.
 ```bash
@@ -118,7 +118,7 @@ systemctl status flask
 ```
 
 
-## 3. Configure Nginx as reverse proxy
+### 3. Configure Nginx as reverse proxy
 Install Nginx.
 ```bash
 sudo apt install nginx        
@@ -170,7 +170,7 @@ sudo tail /var/log/nginx/errors.log
 ```
 
 
-## 4. Run Website
+### 4. Run Website
 Enter the public IP of EC2 machine in your browser. And the App will be working via nginx server.
 
 If you want further detail, you can also see this 
