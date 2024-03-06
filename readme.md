@@ -18,18 +18,21 @@ This is `Flask` based Blog app with `MySQL` (ORM) at backend. It has four sectio
 
 
 ### Quick Start (Running the app locally)
+
+Clone the repo and enter the project directory
 ```bash
-# clone the repo and enter the project directory
 git clone https://github.com/Saweiz/Flask-Blog-App
 cd Flask-Blog-App
 ```
+
+Create virtual environment and activate it
 ```bash
-# create virtual environment and activate it
 python3 -m venv venv
 source venv/bin/activate
 ```
+
+Install necessary python modules within virtual environment
 ```bash
-# install necessary python modules within virtual environment
 pip install flask flask-sqlalchemy pymysql
 
 ```
